@@ -1,0 +1,13 @@
+#!/bin/bash
+TARGET=/home/yc/git/landing_page_bs/source
+TARGET_CSS=$TARGET/css
+TARGET_JS=$TARGET/js
+TARGET_IMG=$TARGET/img
+
+make clean
+make build
+make bootstrap
+
+cp bootstrap/css/* $TARGET_CSS
+cp bootstrap/js/*  $TARGET_JS
+cp bootstrap/img/* $TARGET_IMG
